@@ -4,11 +4,14 @@
 -- ex. SELECT * FROM "user";
 -- Otherwise you will have errors!
 
-CREATE TABLE "user"
-(
+
+-- Create a database named 'smart_waste_collection'
+
+CREATE TABLE "user" (
     "id" SERIAL PRIMARY KEY,
-    "username" VARCHAR(255),
-    "password" VARCHAR(255)
+    "username" VARCHAR (80) UNIQUE NOT NULL,
+    "password" VARCHAR (1000) NOT NULL,
+    "company" VARCHAR (150)
 );
-	
+
 
