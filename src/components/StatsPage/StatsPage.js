@@ -55,11 +55,13 @@ class StatsPage extends Component {
                 <section className="dashboard">
                     <Sync className="icon"/>
                     <br/>
+                    <br/>
                     <span className="dashboard-p">Recycled: 34,689</span>
                 </section>
 
                 <section className="dashboard">
                     <LocalFlorist className="icon"/>
+                    <br/>
                     <br/>
                     <span className="dashboard-p">Compost: 34,689</span>
                 </section>
@@ -67,10 +69,11 @@ class StatsPage extends Component {
                 <section className="dashboard">
                     <Delete className="icon"/>
                     <br/>
+                    <br/>
                     <span className="dashboard-p">Trash: 34,689</span>
                 </section>
 
-                <br></br>
+                <br/>
 
                 <div>
                     <Doughnut
@@ -96,6 +99,7 @@ class StatsPage extends Component {
 
                 <section className="dashboard">
                     <MonetizationOn className="icon"/>
+                    <br/>
                     <br/>
                     <span className="dashboard-p">Savings To-Date: $9,294</span>
                 </section>
