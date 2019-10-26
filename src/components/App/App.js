@@ -6,11 +6,24 @@ import {
   Switch,
 } from 'react-router-dom';
 
+
+
+// var monk = require('monk');
+// var db = monk('192.168.4.162:27017/pi1');
+
+// app.use(function(req,res,next){
+//   req.db = db;
+//   next();
+// });
+
+
 import {connect} from 'react-redux';
 
 import Nav from '../Nav/Nav';
 import ScanningPage from '../ScanningPage/ScanningPage';
-import SuggestedPage from '../SuggestedPage/SuggestedPage'
+import SuggestedPage from '../SuggestedPage/SuggestedPage';
+import AdminPage from '../AdminPage/AdminPage';
+
 
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute'
 
@@ -19,6 +32,8 @@ import UserPage from '../UserPage/UserPage';
 
 
 import './App.css';
+
+
 
 
 class App extends Component {
@@ -37,7 +52,8 @@ class App extends Component {
             {/* Visiting localhost:3000/about will show the about page.
             This is a route anyone can see, no login necessary */}
             <Route exact path="/scan" component={ScanningPage} />
-            <Route exact path="/suggest" component={SuggestedPage} />
+            <Route exact path="/suggested" component={SuggestedPage} />
+            <Route exact path="/admin" component={AdminPage} />
             {/* For protected routes, the view could show one of several things on the same route.
             Visiting localhost:3000/home will show the UserPage if the user is logged in.
             If the user is not logged in, the ProtectedRoute will show the 'Login' or 'Register' page.
