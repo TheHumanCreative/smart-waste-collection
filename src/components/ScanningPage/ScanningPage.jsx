@@ -5,18 +5,18 @@ import { withStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 
 const styles = {
- 
+  
 };
 
+class ScanningPage extends Component {
 
-class SuggestedPage extends Component {
-  render() {
+    render() {
     return (
-      <div>
-        <h1>Suggested Page</h1>
-      </div>
-    );
-  }
+        <div>
+            <h1>Scan Your Item</h1>
+        </div>
+    )
+    }
 }
 
 const mapStateToProps = reduxStore => {
@@ -25,4 +25,4 @@ const mapStateToProps = reduxStore => {
   };
 };
 
-export default connect(mapStateToProps)(withStyles(styles)(SuggestedPage));
+export default connect(mapStateToProps)(withStyles(styles)(ScanningPage));
