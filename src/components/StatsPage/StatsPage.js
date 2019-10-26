@@ -44,7 +44,6 @@ class StatsPage extends Component {
         return (
             <div>
                 <h1>Statistics</h1>
-                <h2>awesome stats here... ;)</h2>
 
                 <section className="dashboard">
                     <Favorite className="icon"/>
@@ -74,8 +73,12 @@ class StatsPage extends Component {
                 </section>
 
                 <br/>
+                <section></section>
 
                 <div>
+
+                <h2 class="CenterPage">The Big Picture</h2>
+
                     <Doughnut
                         width={400}
                         height={400}
@@ -94,6 +97,8 @@ class StatsPage extends Component {
                     }} />
 
                 </div>
+
+                <section></section>
                 
                 <br></br>
 

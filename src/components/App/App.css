@@ -179,6 +179,10 @@ input{
     
     
     /**********   CLASSES   ***********/
+
+    .break{
+        height: 30px;
+    }
     
     .dashboard{
       height: 200px;
