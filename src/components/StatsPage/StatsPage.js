@@ -4,8 +4,8 @@ import { connect } from "react-redux";
 import { withStyles } from "@material-ui/core/styles";
 // import { Grid } from "@material-ui/core";
 import {Favorite, Sync, LocalFlorist, Delete} from "@material-ui/icons";
-import Chart = require('chart.js');
-
+import {Chart} from "chart.js";
+import {CountUp} from "countup.js";
 
 const styles = {
   
@@ -14,6 +14,15 @@ const styles = {
 class StatsPage extends Component {
 
     render() {
+
+        let demo = new CountUp('myTargetElement', 5817);
+        if (!demo.error) {
+          demo.start();
+        } else {
+          console.error(demo.error);
+        }
+
+        let ctx = 'donutChart';
 
         let donutChart = new Chart(ctx, {
             type: 'doughnut',
@@ -27,7 +36,8 @@ class StatsPage extends Component {
                         '#549F93',
                         '#9FAF90'
                     ],
-            options: options
+                }]
+            }
         });
 
         return (
@@ -60,7 +70,8 @@ class StatsPage extends Component {
                 </section>
 
                 <div>
-                    {donutChart}
+                    {/* {donutChart} */}
+                    <canvas id="donutChart" width="20" height="20"></canvas>
                 </div>
 
             </div>
