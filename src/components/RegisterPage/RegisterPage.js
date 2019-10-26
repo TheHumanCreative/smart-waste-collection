@@ -5,6 +5,7 @@ class RegisterPage extends Component {
   state = {
     username: '',
     password: '',
+    company: '',
   };
 
   registerUser = (event) => {
@@ -16,6 +17,7 @@ class RegisterPage extends Component {
         payload: {
           username: this.state.username,
           password: this.state.password,
+          company: this.state.company,
         },
       });
     } else {
@@ -61,6 +63,17 @@ class RegisterPage extends Component {
                 name="password"
                 value={this.state.password}
                 onChange={this.handleInputChangeFor('password')}
+              />
+            </label>
+          </div>
+          <div>
+            <label htmlFor="company">
+              Company:
+              <input
+                type="text"
+                name="company"
+                value={this.state.company}
+                onChange={this.handleInputChangeFor('company')}
               />
             </label>
           </div>

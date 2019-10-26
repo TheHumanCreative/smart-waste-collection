@@ -23,6 +23,7 @@ const Nav = props => (
             Start Brewing
           </Link> */}
           <LogOutButton className="nav-link"/>
+                    <LogOutButton className="nav-link"/>
         </>
       )}
       {/* Always show this link since the about page is not protected */}
@@ -33,7 +34,6 @@ const Nav = props => (
         Suggested Item
       </Link>
       <Link className="nav-link" to="/">
-        
       </Link>
       {/* <Link>
         <LogOutButton className="nav-link" to="/log-in" />
