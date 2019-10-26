@@ -4,5 +4,11 @@
 -- ex. SELECT * FROM "user";
 -- Otherwise you will have errors!
 
-
+CREATE TABLE "user"
+(
+    "id" SERIAL PRIMARY KEY,
+    "username" VARCHAR(255),
+    "password" VARCHAR(255)
+);
+	
 

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
-import { Grid } from "@material-ui/core";
+// import { Grid } from "@material-ui/core";
 
 const styles = {
   
@@ -14,6 +14,8 @@ class ScanningPage extends Component {
     return (
         <div>
             <h1>Scan Your Item</h1>
+            <h2>An Item Scanner would appear here</h2>
+            
         </div>
     )
     }
