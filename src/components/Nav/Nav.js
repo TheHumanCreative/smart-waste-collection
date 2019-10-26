@@ -32,6 +32,9 @@ const Nav = props => (
       <Link className="nav-link" to="/admin">
         Admin View
       </Link>
+      <Link className="nav-link" to="/stats">
+        Stats
+      </Link>
     </div>
   </div>
 );

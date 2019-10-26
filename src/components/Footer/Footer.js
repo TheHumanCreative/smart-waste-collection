@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => (
   <main>
   <footer>
-    
+    <p>Built by team Smart Waste Collection :)</p>
   </footer>
   </main>
 );
