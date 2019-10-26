@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 // import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
 // import { Grid } from "@material-ui/core";
-import {Restore, Lock, TrendingUp, ViewList} from '@material-ui/icons';
+import {Favorite, Sync, LocalFlorist, Delete} from "@material-ui/icons";
 
 
 const styles = {
@@ -19,9 +19,27 @@ class StatsPage extends Component {
                 <h2>awesome stats here... ;)</h2>
 
                 <section className="dashboard">
-                    <Lock className="icon"/>
+                    <Favorite className="icon"/>
                     <br/>
-                    <span className="dashboard-p">Create New Habit</span>
+                    <span className="dashboard-p">Total Items Sorted: 34,689</span>
+                </section>
+
+                <section className="dashboard">
+                    <Sync className="icon"/>
+                    <br/>
+                    <span className="dashboard-p">Recycled: 34,689</span>
+                </section>
+
+                <section className="dashboard">
+                    <LocalFlorist className="icon"/>
+                    <br/>
+                    <span className="dashboard-p">Compost: 34,689</span>
+                </section>
+
+                <section className="dashboard">
+                    <Delete className="icon"/>
+                    <br/>
+                    <span className="dashboard-p">Trash: 34,689</span>
                 </section>
 
             </div>
