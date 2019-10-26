@@ -35,9 +35,6 @@ const Nav = props => (
       </Link>
       <Link className="nav-link" to="/">
       </Link>
-      <Link className="nav-link" to="/company-view">
-        Your Company
-      </Link>
       {/* <Link>
         <LogOutButton className="nav-link" to="/log-in" />
       </Link> */}
