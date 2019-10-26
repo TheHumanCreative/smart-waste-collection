@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { withStyles } from "@material-ui/core/styles";
 // import { Grid } from "@material-ui/core";
 import {Favorite, Sync, LocalFlorist, Delete} from "@material-ui/icons";
+import Chart = require('chart.js');
 
 
 const styles = {
@@ -13,6 +14,22 @@ const styles = {
 class StatsPage extends Component {
 
     render() {
+
+        let donutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Recycling', 'Compost', 'Trash'],
+                datasets: [{
+                    label: 'Items Sorted',
+                    data: [12, 19, 3],
+                    backgroundColor: [
+                        '#008183',
+                        '#549F93',
+                        '#9FAF90'
+                    ],
+            options: options
+        });
+
         return (
             <div>
                 <h1>Statistics</h1>
@@ -41,6 +58,10 @@ class StatsPage extends Component {
                     <br/>
                     <span className="dashboard-p">Trash: 34,689</span>
                 </section>
+
+                <div>
+                    {donutChart}
+                </div>
 
             </div>
         )
